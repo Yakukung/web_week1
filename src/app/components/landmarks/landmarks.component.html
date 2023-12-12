@@ -1,0 +1,15 @@
+<p>landmarks works!</p>
+<div style="margin: 2rem;">
+    id: <input type="text" #id /><button (click)="findOne(id)" style="margin-left: 1rem;">ค้นหา</button>
+</div>
+
+<div *ngIf="landmark; else elseBlock">
+    <h1>{{ this.landmark.name }}</h1>
+    <h2>{{ this.landmark.name }}</h2>
+    <h3>{{ this.landmark.country }}</h3>
+    <p>{{ this.landmark.detail }}</p>
+    <img src="{{ this.landmark.url }}" />
+  </div>
+  <ng-template #elseBlock>
+    <div>Landmark not found</div>
+  </ng-template>

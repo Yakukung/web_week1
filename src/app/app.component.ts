@@ -7,6 +7,7 @@ import { MatButtonModule } from '@angular/material/button';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatIconModule} from '@angular/material/icon';
 import { DatabindingComponent } from "./components/databinding/databinding.component";
+import { LandmarksComponent } from "./components/landmarks/landmarks.component";
 
 
 @Component({
@@ -22,7 +23,8 @@ import { DatabindingComponent } from "./components/databinding/databinding.compo
         MatButtonModule,
         MatFormFieldModule,
         MatIconModule,
-        DatabindingComponent
+        DatabindingComponent,
+        LandmarksComponent
     ]
 })
 export class AppComponent {
