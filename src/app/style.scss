@@ -1,0 +1,14 @@
+// At the first line
+@use '@angular/material' as mat;
+
+.dense-1 {
+    @include mat.all-component-densities(-1);
+}
+
+.dense-2 {
+    @include mat.all-component-densities(-2);
+}
+
+.dense-3 {
+    @include mat.all-component-densities(-3);
+}

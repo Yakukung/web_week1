@@ -1,0 +1,41 @@
+body{
+    width: 100%;
+    height: auto;
+    background-color: #282828;
+
+}
+.mat-toolbar {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    background-color: #212121;
+    color: #282828;
+
+    & .logo{
+        color: white;
+        display: flex;
+        align-items: center;
+        & h1{
+            font-size: 2rem;
+        }
+    }
+    & button{
+        color: white;
+    }
+}
+.container{
+    & .row{
+        & h3, h2, hr, p{
+            color: white;
+        }
+
+    }
+    & mat-label{
+        color: white;
+        & textarea{
+            color: gray;
+        }
+    }
+}
